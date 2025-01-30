@@ -41,6 +41,7 @@ export class ProductComponent
     console.log({ changes });
 
     console.log('ngOnChanges');
+    //para estar detectando los cambios de un @Input
   }
   ngDoCheck(): void {
     console.log('ngDoCheck');
@@ -59,6 +60,7 @@ export class ProductComponent
   }
   ngOnDestroy(): void {
     console.log('ngOnDestroy');
+    //siempre hacer limpieza si se creo un listener, observable, interval, etc
   }
 
   increasedPrice() {
